@@ -1,0 +1,261 @@
+body{
+    background-color: #f4f4f4;
+}
+body.active{
+    background-color: #050505;
+}
+
+.container{
+    width: 1140px;
+    margin: 50px auto;
+    
+}
+ #logo{
+    margin-left: 0px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#logo img{
+    width: 100px;
+}
+.header{
+    
+    display: inline-block;
+    margin-left: 600px;
+}
+#font{
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    margin: 20px;
+    padding: 8px;
+    background-color: #f4f4f4;
+    font-size: 24px;
+    font-weight: bold;
+    }
+#font.active{
+    background-color:#050505;
+    color: #f4f4f4;
+}
+option{
+    background-color:#f4f4f4;
+}
+#font.active option{
+    background-color: #050505;
+}
+button{
+    border-radius: 20px;
+    background-color: #757575;
+    color: white;
+    vertical-align: middle;
+    
+}
+#toggle{
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #757575;
+    vertical-align: middle;
+    transition: 0.5s;
+    cursor: pointer;
+    /* box-shadow: inset 0 8px 60px rgba(0,0,0,0.1),
+                inset 0 8px 8px rgba(0,0,0,0.1),
+                inset 0 -4px 4px rgba(0,0,0,0.1); */
+}
+#toggle.active .indicator{
+    left: 32px;
+}
+.indicator{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background: white;
+    border-radius: 50%;
+    transform: scale(0.9);
+    /* box-shadow: 0 8px 40px rgba(0,0,0,0.5),
+                inset 0 4px 4px rgba(255, 255, 255, 0.2),
+                inset 0 -4px 4px rgba(255, 255, 255, 0.2); */
+
+}
+.moonImage{
+    margin: 15px;
+    width: 48px;
+    vertical-align:middle;
+    color: #757575;
+}
+/* search bar */
+#searchbox{
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color:#e9e9e9;
+    border-radius:10px;
+    align-items: center;
+    width: 980px;
+    margin-left: 28px;
+    margin-top: 30px;
+
+}
+#searchbox.active{
+    background-color: #3a3a3a;
+}
+#searchbox.empty{
+    border: red 2px solid;
+}
+#searchbox.active input{
+    background-color: #3a3a3a;
+}
+#searchbox input{
+    width: 900px;
+    font-weight: 400px;
+    border: none ;
+    background: transparent;
+     
+    
+}
+#searchbox a .fas{
+    color: rgb(82, 18, 18);
+    font-size: 18px;
+  
+}
+/* heading  */
+#pageOne{
+    display: none;
+}
+#pageOne.active{
+    display: block;}
+#heading{
+    margin-left: 28px;
+    margin-top: 30px;
+}
+#heading h1{
+    font-size: 48px;
+    font-weight: bold;
+    display: inline-block;
+}
+#heading.active h1{
+    color: white;
+}
+#heading p{
+    font-size: 24px;
+    color: #A455ED;
+}
+#heading img{
+    margin-left: 700px;
+    width: 64px;
+    background-color: #A455ED;
+    border-radius: 50%;
+}
+/* noun */
+#noun{
+    margin-left: 28px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#noun h3{
+    font-style: italic;
+    font-weight: bold;
+}
+#noun.active h3{
+    color:white
+}
+#noun h4{
+    margin-top: 30px;
+    color: #757575;
+    display: inline-block;
+}
+
+#noun h6{
+    margin-top: 30px;
+    color: #757575;
+    display: inline-block;
+}
+#noun li{
+    margin: 15px;
+    font-size: 18px;
+    max-width: 1000px;
+}
+#noun.active li{
+    color: white;
+}
+.paragrah{
+    margin: 35px;
+    color: #757575;
+}
+#noun a{
+    margin: 35px;
+}
+#link_paragraph{
+    display: inline-block;
+    color: black;
+}
+#link_paragraph.active{
+    color: white;
+}
+.link_image{
+    vertical-align: middle;
+    margin: 5px;
+}
+
+/* Not Found */
+#notFound{
+    margin-top: 100px;
+    display: none;
+}
+#notFound.active{
+    display: block;
+}
+#sadImoji{
+    width: 250px;
+    margin-left: 400px;
+    
+}
+#notFoundText{
+    margin-left: 350px;
+}
+#notFoundText.active{
+    color: white;
+}
+#notFoundParagraph{
+    font-size: 24px;
+    margin-top: 50px;
+    text-align: center;
+}
+#notFoundParagraph.active{
+    color: #757575;
+}
+
+/* EMPTY */
+#emptyParagraph.empty{
+    display: block;
+}
+#emptyParagraph{
+    color: red;
+    font-size: 24px;
+    margin-left: 28px;
+    display: none;
+}
+
+/* RESPONSIVE */
+@media (max-width = 991px) {
+    /* .container {
+        width: 50%;
+    }
+    #logo{
+        margin-left: 0px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    #logo img{
+        width: 100px;
+    } */
+    .header{
+        display: none;
+        margin-left: 400px;
+    }
+}
